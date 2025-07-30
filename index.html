@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/dropbox-log.svg" />
+  <title>Dropbox.com</title>
+  <link rel="stylesheet" href="my-bulma-project.css" />
+  <!-- <link rel="stylesheet" href="debug.css"> -->
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="navbar is-fixed-top py-1 px-2">
+    <div class="navbar-brand navbar-start ">
+      <div class="navbar-item pr-2">
+        <img class="is-fullheight" src="assets/dropbox-log.svg" alt="dropbox logo" style="max-height: 2.5rem" />
+        <p class="title is-5 has-text-black">Dropbox</p>
+      </div>
+      <a class="navbar-burger has-text-black" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="nav-links">
+      <div class="navbar-start has-text-centered has-text-weight-bold is-size-7">
+        <a class="navbar-item has-text-black ">Products</a>
+        <a class="navbar-item has-text-black ">Solutions</a>
+        <a class="navbar-item has-text-black ">Enterprise</a>
+        <a class="navbar-item has-text-black ">Pricing</a>
+      </div>
+
+      <div class="navbar-end has-text-centered">
+        <a class="navbar-item has-text-black is-size-7">Sign Up</a>
+        <a class="navbar-item has-text-black is-size-7">Log in</a>
+        <button class="button is-link has-text-weight-bold is-align-self-center is-size-6 ml-2" id="nav-button">
+          Get started
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero has-background-light px-2 pt-5">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered is-flex is-8 is-multiline is-justify-content-center">
+          <div class="column is-5-desktop is-12-tablet is-12-mobile " style="max-width: 580px;">
+            <h1 class="is-size-1-tablet is-size-2-mobile has-text-black has-text-weight-bold">
+              <span class="is-block" style="line-height: 3rem;">Find anything.</span>
+              <span class="is-block" style="line-height: 3rem;"">Protect everything.</span>
+            </h1>
+          <p class=" is-size-5-tablet is-size-6-mobile has-text-dark mt-2 mb-3">Find, organize, and protect your work
+                with Dropbox Dash. Now
+                with
+                advanced search for video,images, and team members—plus generative AI capabilities across even
+                moreconnected apps.
+                </p>
+                <div class="buttons">
+                  <button class="button is-link is-size-6 has-text-weight-bold p-2">
+                    What's new with Dash
+                    <img class="image is-16x16 ml-2" src="assets/arrow-white.png" alt="arrow-white">
+                  </button>
+
+                  <button class="button is-size-6" style="background-color: transparent; border: 0; box-shadow: none;">
+                    <a class="has-text-black has-text-weight-bold">Try Dropbox Free</a>
+                    <img class="image is-16x16 ml-2" src="assets/arrow-black.png" alt="arrow-black">
+                  </button>
+
+                </div>
+          </div>
+          <div class="column is-7-desktop is-12-tablet is-12-mobile">
+            <video autoplay muted loop>
+              <source src="assets/hero-video.webm" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section - 2 -->
+  <section class="has-background-light p-4">
+    <div class="container has-text-centered">
+      <div class="has-background-info is-inline-flex is-align-items-center"
+        style="border-radius: 20px; padding: 6px 16px;">
+        <svg viewBox="0 0 24 24" fill="none" class="dig-UIIcon dig-UIIcon--standard" width="24" height="24"
+          role="presentation" focusable="false">
+          <path
+            d="M15 9V7.25C15 5.768 14.436 4 11.75 4S8.5 5.768 8.5 7.25V9H6v7.75A3.254 3.254 0 0 0 9.25 20h5a3.254 3.254 0 0 0 3.25-3.25V9H15Zm-5-1.75c0-1.292.458-1.75 1.75-1.75s1.75.458 1.75 1.75V9H10V7.25Zm6 9.5a1.75 1.75 0 0 1-1.75 1.75h-5a1.75 1.75 0 0 1-1.75-1.75V10.5H16v6.25Z"
+            fill="white" vector-effect="non-scaling-stroke"></path>
+          <path
+            d="M11 15.366V17h1.5v-1.634a1.603 1.603 0 0 0 1-1.616A1.626 1.626 0 0 0 11.75 12 1.626 1.626 0 0 0 10 13.75a1.603 1.603 0 0 0 1 1.616Z"
+            fill="white" vector-effect="non-scaling-stroke"></path>
+        </svg>
+        <p class="has-text-white is-size-7">Permissions</p>
+      </div>
+      <h2 class="has-text-black has-text-weight-semibold is-size-3 my-1">Protect all your content</h2>
+      <div class="columns is-centered">
+        <div class="column is-7 has-text-centered">
+          <p class="has-text-dark is-size-6">Dash makes it easy to find files across apps and safeguard sensitive
+            content.
+            With AI-powered search and universal access controls, your team stays connected, efficient, and secure.</p>
+        </div>
+      </div>
+      <button class="button is-size-6 has-text-black is-light has-text-weight-bold"
+        style="border: 2px solid #1e1919; padding: 12px 24px;">
+        Learn more
+        <img class="image is-16x16 ml-2" src="assets/arrow-black.png" alt="arrow-black">
+      </button>
+
+      <div class="columns is-vcentered is-justify-content-center mt-5">
+        <div class="column is-4-desktop is-12-mobile">
+          <video autoplay muted loop>
+            <source src="assets/section-2-video.webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="column is-4 is-hidden-touch">
+          <img src="assets/section-2-image.png" alt="section-2-image">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section - 3 -->
+  <section class="has-background-white p-4 mt-5">
+    <div class="container has-text-centered">
+      <div class="has-background-warning is-inline-flex is-align-items-center"
+        style="border-radius: 20px; padding: 6px 16px;">
+        <svg viewBox="0 0 24 24" fill="none" class="dig-UIIcon dig-UIIcon--standard" width="24" height="24"
+          role="presentation" focusable="false">
+          <path
+            d="M17.75 19h-12a2.25 2.25 0 0 1-2.25-2.25V5h4.573a2.238 2.238 0 0 1 2.012 1.244l.378.756H20v9.75A2.25 2.25 0 0 1 17.75 19ZM5 6.5v10.25a.75.75 0 0 0 .75.75h12a.75.75 0 0 0 .75-.75V8.5H9.537l-.793-1.585a.745.745 0 0 0-.671-.415H5Z"
+            fill="white" vector-effect="non-scaling-stroke"></path>
+        </svg>
+        <!-- <img class="image is-24x24" src="assets/lock.png" alt="lock icon"> -->
+        <p class="has-text-white is-size-7">Content management</p>
+      </div>
+      <h2 class="has-text-black has-text-weight-semibold is-size-3 my-1">Stay organized and on track</h2>
+      <div class="columns is-centered">
+        <div class="column is-8 has-text-centered">
+          <p class="has-text-dark is-size-6">
+            Smart organization and suggestions, natural language search, and seamless
+            integrations mean everything is easy to find and intuitive to manage—all within Dropbox cloud storage, so
+            your team can focus on their work.
+          </p>
+        </div>
+      </div>
+      <div class="buttons is-justify-content-center is-align-items-center">
+        <button class="button is-size-6 has-text-black is-white has-text-weight-bold"
+          style="border: 2px solid #1e1919; padding: 12px 24px;">
+          Learn more
+          <img class="image is-16x16 ml-2" src="assets/arrow-black.png" alt="arrow-black">
+        </button>
+        <button class="button is-size-6" style="background-color: transparent; border: 0; box-shadow: none;">
+          <a class="has-text-black has-text-weight-bold">
+            Get started free
+          </a>
+          <img class="image is-16x16 ml-2" src="assets/arrow-black.png" alt="arrow-black">
+        </button>
+
+      </div>
+
+
+      <div class="columns is-vcentered is-justify-content-center mt-5  ">
+        <div class="column is-4-desktop is-12-mobile">
+          <img src="assets/section-3-image-1.png" alt="section-3-image">
+        </div>
+        <div class="column is-4 is-hidden-touch">
+          <img src="assets/section-3-image-2.png" alt="section-3-image">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section - 4 -->
+  <section class="has-background-white p-4 mt-5">
+    <div class="container has-text-centered">
+      <div class="has-background-danger is-inline-flex is-align-items-center"
+        style="border-radius: 20px; padding: 6px 16px;">
+        <svg viewBox="0 0 24 24" fill="none" class="dig-UIIcon dig-UIIcon--standard" width="24" height="24"
+          role="presentation" focusable="false">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3 15.5h5.25L9 14H4.5v-1.352a2.128 2.128 0 0 1 2.125-2.125h4.174l.736-1.473c.185-.492.26-1.043.26-1.618 0-1.063-.254-2.047-.995-2.72C10.08 4.06 9.215 4 8.75 4c-.465 0-1.33.059-2.05.713-.74.672-.995 1.656-.995 2.719 0 .587.077 1.15.271 1.65A3.628 3.628 0 0 0 3 12.646V15.5Zm7.296-8.068c0 .838-.198 1.319-.485 1.59-.299.284-.694.342-1.061.342s-.762-.058-1.061-.341c-.286-.272-.484-.753-.484-1.591 0-1.713.826-1.932 1.545-1.932.72 0 1.546.22 1.546 1.932ZM21.01 20H9.532v-2.85a3.622 3.622 0 0 1 2.967-3.559c-.193-.497-.27-1.058-.27-1.642 0-1.061.254-2.044.994-2.715.72-.654 1.583-.712 2.048-.712.464 0 1.327.058 2.047.712.74.671.994 1.654.994 2.715 0 .584-.077 1.145-.27 1.642a3.622 3.622 0 0 1 2.968 3.559V20Zm-7.859-4.968a2.122 2.122 0 0 0-2.12 2.12V18.5h8.479v-1.349a2.121 2.121 0 0 0-2.12-2.12h-4.239Zm3.182-1.5c.284-.272.48-.751.48-1.583 0-1.708-.825-1.927-1.542-1.927-.718 0-1.542.219-1.542 1.927 0 .832.196 1.31.48 1.583.298.286.694.344 1.062.344.368 0 .764-.058 1.062-.344Z"
+            fill="white" vector-effect="non-scaling-stroke"></path>
+        </svg>
+        <p class="has-text-white is-size-7">Content management</p>
+      </div>
+      <h2 class="has-text-black has-text-weight-semibold is-size-3 my-1">
+        Instant sharing keeps work flowing
+      </h2>
+      <div class="columns is-centered">
+        <div class="column is-7 has-text-centered">
+          <p class="has-text-dark is-size-6">
+            Secure links, real-time syncing, and large file transfers keep your team
+            and partners connected so collaboration stays seamless.
+          </p>
+        </div>
+      </div>
+      <div class="buttons is-justify-content-center is-align-items-center">
+        <button class="button is-size-6 has-text-black is-white has-text-weight-bold"
+          style="border: 2px solid #1e1919; padding: 12px 24px;">
+          Learn more
+          <img class="image is-16x16 ml-2" src="assets/arrow-black.png" alt="arrow-black">
+        </button>
+        <button class="button is-size-6" style="background-color: transparent; border: 0; box-shadow: none;">
+          <a class="has-text-black has-text-weight-bold">
+            Get started free
+          </a>
+          <img class="image is-16x16 ml-2" src="assets/arrow-black.png" alt="arrow-black">
+        </button>
+
+      </div>
+
+
+      <div class="columns is-vcentered is-justify-content-center mt-5  ">
+        <div class="column is-4-desktop is-12-mobile">
+          <img src="assets/section-4-image-1.png" alt="section-4-image">
+        </div>
+        <div class="column is-4 is-hidden-touch">
+          <img src="assets/section-4-image-2.png" alt="section-4-image">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section - 5 -->
+  <section class="px-4">
+    <div class="container p-4 has-text-centered"
+      style="border-radius: 20px; background: #000000; background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(41, 44, 49, 1) 100%);">
+      <svg viewBox="0 0 24 24" fill="none" class="dig-PictogramIcon" width="64" height="64" focusable="false"
+        role="presentation">
+        <path
+          d="M15 9V7.25C15 5.768 14.436 4 11.75 4S8.5 5.768 8.5 7.25V9H6v7.75A3.254 3.254 0 0 0 9.25 20h5a3.254 3.254 0 0 0 3.25-3.25V9H15Zm-5-1.75c0-1.292.458-1.75 1.75-1.75s1.75.458 1.75 1.75V9H10V7.25Zm6 9.5a1.75 1.75 0 0 1-1.75 1.75h-5a1.75 1.75 0 0 1-1.75-1.75V10.5H16v6.25Z"
+          fill="white" vector-effect="non-scaling-stroke"></path>
+        <path
+          d="M11 15.366V17h1.5v-1.634a1.603 1.603 0 0 0 1-1.616A1.626 1.626 0 0 0 11.75 12 1.626 1.626 0 0 0 10 13.75a1.603 1.603 0 0 0 1 1.616Z"
+          fill="white" vector-effect="non-scaling-stroke"></path>
+      </svg>
+      <h2 class="has-text-white has-text-weight-semibold is-size-3 my-1">Security never comes second</h2>
+      <div class="columns is-centered">
+        <div class="column is-8 has-text-centered">
+          <p class="is-size-6" style="color: #A2A2A1;">From industry-leading encryption and tamper-proof documents to
+            version history and recovery, Dropbox keeps your intellectual property safe and never sells or shares your
+            data.</p>
+        </div>
+      </div>
+      <div class="buttons is-justify-content-center is-align-items-center">
+        <button class="button is-size-6 has-text-white has-text-weight-bold"
+          style="border: 2px solid #ffffff; padding: 12px 24px; background-color: transparent;">
+          Get started free
+          <img class="image is-16x16 ml-2" src="assets/arrow-white.png" alt="arrow-white">
+        </button>
+        <button class="button is-size-6" style="background-color: transparent; border: 0; box-shadow: none;">
+          <a class="has-text-white has-text-weight-bold">
+            Learn more
+          </a>
+          <img class="image is-16x16 ml-2" src="assets/arrow-white.png" alt="arrow-white">
+        </button>
+      </div>
+
+      <div class="columns is-vcentered is-justify-content-center mt-5  ">
+        <div class="column is-5-desktop is-hidden-touch">
+          <img src="assets/section-5-image-2.png" alt="section-5-image">
+        </div>
+        <div class="column is-5-desktop is-12-mobile">
+          <img src="assets/section-5-image-3.png" alt="section-5-image">
+        </div>
+      </div>
+      <div class="columns mt-5 is-multiline is-justify-content-center is-3">
+        <div class="column is-8">
+          <!-- Card -->
+          <div class="is-flex p-1" style="background-color: #1C1D21; border-radius: 20px;">
+            <!-- Image -->
+            <div class="is-hidden-mobile" style="max-width: 275px; ">
+              <img src="assets/BrianThumb.png" alt="BrianThumb"
+                style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+            </div>
+            <!-- Text -->
+            <div
+              class="has-text-left py-2 px-3 is-flex is-flex-direction-column is-justify-content-space-between is-flex-wrap-nowrap">
+              <div>
+                <p class="has-text-weight-bold" style="font-size: 0.75rem; color: #C12D75;">
+                  Testemonial
+                </p>
+                <h3 class="has-text-white has-text-weight-bold pt-2 pb-1"
+                  style="font-size: 1.125rem; max-width: 275px;">
+                  “The security of knowing our
+                  information is safe.”
+                </h3>
+                <p class="is-size-7" style="color: #9D9C9C; ">
+                  Customer Bryan Chandler reveals how his team uses Dropbox to
+                  organize and share files securely.
+                </p>
+              </div>
+              <a class="is-size-6 has-text-white has-text-weight-bold">
+                Watch testimonial
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="column is-8">
+          <!-- Card -->
+          <div class="is-flex p-1" style="background-color: #1C1D21; border-radius: 20px;">
+            <!-- Image -->
+            <div class="is-hidden-mobile" style="max-width: 275px; ">
+              <img src="assets/JustinThumb.png" alt="BrianThumb"
+                style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+            </div>
+            <!-- Text -->
+            <div
+              class="has-text-left py-2 px-3 is-flex is-flex-direction-column is-justify-content-space-between is-flex-wrap-nowrap">
+              <div>
+                <p class="has-text-weight-bold" style="font-size: 0.75rem; color: #C12D75;">
+                  Testemonial
+                </p>
+                <h3 class="has-text-white has-text-weight-bold pt-2 pb-1"
+                  style="font-size: 1.125rem; max-width: 275px;">
+                  “Seriously impressive security features”
+                </h3>
+                <p class="is-size-7" style="color: #9D9C9C; ">
+                  Tech influencer Justin Tse discusses why he trusts Dropbox to keep his content safe.
+                </p>
+              </div>
+              <a class="is-size-6 has-text-white has-text-weight-bold">
+                Watch testimonial
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-8">
+          <!-- Card -->
+          <div class="is-flex p-1" style="background-color: #1C1D21; border-radius: 20px;">
+            <!-- Image -->
+            <div class="is-hidden-mobile" style="max-width: 275px; ">
+              <img src="assets/SecurityThumb.png" alt="BrianThumb"
+                style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+            </div>
+            <!-- Text -->
+            <div
+              class="has-text-left py-2 px-3 is-flex is-flex-direction-column is-justify-content-space-between is-flex-wrap-nowrap">
+              <div>
+                <p class="has-text-weight-bold" style="font-size: 0.75rem; color: #C12D75;">
+                  Webinar
+                </p>
+                <h3 class="has-text-white has-text-weight-bold pt-2 pb-1"
+                  style="font-size: 1.125rem; max-width: 275px;">
+                  “How do you enhance security and keep productivity reasonable?”
+                </h3>
+                <p class="is-size-7" style="color: #9D9C9C; ">
+                  Your company's sharing content with collaborators all over the world. Are you in control?
+                </p>
+              </div>
+              <a class="is-size-6 has-text-white has-text-weight-bold">
+                Watch webinar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="my-4 has-text-dark is-size-6">Trusted by the biggest companies in the world</p>
+  </section>
+
+  <!-- Section 6 -->
+  <section class="px-4 my-6">
+    <div class="container">
+      <h2 class="has-text-black is-size-2 has-text-weight-semibold has-text-centered mb-5">Dropbox empowers across
+        industries</h2>
+      <div class="columns is-multiline is-3">
+        <div class="column is-6-desktop is-12-tablet is-12-mobile">
+          <!-- Card -->
+          <div class="is-flex has-background-light" style="border-radius: 20px;">
+            <!-- Image -->
+            <div class="is-hidden-mobile" style="max-width: 185px; height: 185px;">
+              <img src="assets/grid-img-1.jpg" alt="grid-img-1"
+                style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px; width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <!-- Text -->
+            <div class="is-flex is-justify-content-space-between is-flex-direction-column p-2 is-flex-wrap-nowrap">
+              <div>
+                <h3 class="has-text-black has-text-weight-bold" style="font-size: 1.125rem;">
+                  Construction
+                </h3>
+                <p class="is-size-7 has-text-dark">
+                  With Dropbox for teams, you can store, access, preview, edit and
+                  transfer CAD, BIM, PDF and visual
+                  content files from anywhere.
+                </p>
+              </div>
+
+              <button class="button is-size-6 p-0 is-justify-content-left"
+                style="background-color: transparent; border: 0; box-shadow: none;">
+                <a class="has-text-black has-text-weight-bold">
+                  Learn more
+                </a>
+                <img class="image is-16x16 ml-1" src="assets/arrow-black.png" alt="arrow-black">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-6-desktop is-12-tablet is-12-mobile">
+          <!-- Card -->
+          <div class="is-flex has-background-light" style="border-radius: 20px;">
+            <!-- Image -->
+            <div class="is-hidden-mobile" style="max-width: 185px; height: 185px;">
+              <img src="assets/grid-img-2.jpg" alt="grid-img-1"
+                style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px; width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <!-- Text -->
+            <div class="is-flex is-justify-content-space-between is-flex-direction-column p-2 is-flex-wrap-nowrap">
+              <div>
+                <h3 class="has-text-black has-text-weight-bold" style="font-size: 1.125rem;">
+                  Media
+                </h3>
+                <p class="is-size-7 has-text-dark">
+                  Create a flexible media workspace that connects your teams, content, and tools together.
+                </p>
+              </div>
+
+              <button class="button is-size-6 p-0 is-justify-content-left"
+                style="background-color: transparent; border: 0; box-shadow: none;">
+                <a class="has-text-black has-text-weight-bold">
+                  Learn more
+                </a>
+                <img class="image is-16x16 ml-1" src="assets/arrow-black.png" alt="arrow-black">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-6-desktop is-12-tablet is-12-mobile">
+          <!-- Card -->
+          <div class="is-flex has-background-light" style="border-radius: 20px;">
+            <!-- Image -->
+            <div class="is-hidden-mobile" style="max-width: 185px; height: 185px;">
+              <img src="assets/grid-img-3.jpg" alt="grid-img-1"
+                style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px; width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <!-- Text -->
+            <div class="is-flex is-justify-content-space-between is-flex-direction-column p-2 is-flex-wrap-nowrap">
+              <div>
+                <h3 class="has-text-black has-text-weight-bold" style="font-size: 1.125rem;">
+                  Technology
+                </h3>
+                <p class="is-size-7 has-text-dark">
+                  Product ideation to development, streamline technology workflows so you can focus on turning
+                  great ideas into products people love.
+                </p>
+              </div>
+
+              <button class="button is-size-6 p-0 is-justify-content-left"
+                style="background-color: transparent; border: 0; box-shadow: none;">
+                <a class="has-text-black has-text-weight-bold">
+                  Learn more
+                </a>
+                <img class="image is-16x16 ml-1" src="assets/arrow-black.png" alt="arrow-black">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-6-desktop is-12-tablet is-12-mobile">
+          <!-- Card -->
+          <div class="is-flex has-background-light" style="border-radius: 20px;">
+            <!-- Image -->
+            <div class="is-hidden-mobile" style="max-width: 185px; height: 185px;">
+              <img src="assets/grid-img-4.jpg" alt="grid-img-1"
+                style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px; width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <!-- Text -->
+            <div class="is-flex is-justify-content-space-between is-flex-direction-column p-2 is-flex-wrap-nowrap">
+              <div>
+                <h3 class="has-text-black has-text-weight-bold" style="font-size: 1.125rem;">
+                  Professional services
+                </h3>
+                <p class="is-size-7 has-text-dark">
+                  Make clients happier with easy collaboration, boosted productivity, and one organized place
+                  to get things done.
+                </p>
+              </div>
+
+              <button class="button is-size-6 p-0 is-justify-content-left"
+                style="background-color: transparent; border: 0; box-shadow: none;">
+                <a class="has-text-black has-text-weight-bold">
+                  Learn more
+                </a>
+                <img class="image is-16x16 ml-1" src="assets/arrow-black.png" alt="arrow-black">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-6-desktop is-12-tablet is-12-mobile">
+          <!-- Card -->
+          <div class="is-flex has-background-light" style="border-radius: 20px;">
+            <!-- Image -->
+            <div class="is-hidden-mobile" style="max-width: 185px; height: 185px;">
+              <img src="assets/grid-img-5.jpg" alt="grid-img-1"
+                style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px; width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <!-- Text -->
+            <div class="is-flex is-justify-content-space-between is-flex-direction-column p-2 is-flex-wrap-nowrap">
+              <div>
+                <h3 class="has-text-black has-text-weight-bold" style="font-size: 1.125rem;">
+                  Manufacturing
+                </h3>
+                <p class="is-size-7 has-text-dark">
+                  Design and engineering teams easily collaborate, managing complex reviews and sharing large
+                  files seamlessly..
+                </p>
+              </div>
+
+              <button class="button is-size-6 p-0 is-justify-content-left"
+                style="background-color: transparent; border: 0; box-shadow: none;">
+                <a class="has-text-black has-text-weight-bold">
+                  Learn more
+                </a>
+                <img class="image is-16x16 ml-1" src="assets/arrow-black.png" alt="arrow-black">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-6-desktop is-12-tablet is-12-mobile">
+          <!-- Card -->
+          <div class="is-flex has-background-light" style="border-radius: 20px;">
+            <!-- Image -->
+            <div class="is-hidden-mobile" style="max-width: 185px; height: 185px;">
+              <img src="assets/grid-img-6.jpg" alt="grid-img-1"
+                style=" border-top-left-radius: 20px; border-bottom-left-radius: 20px; width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <!-- Text -->
+            <div class="is-flex is-justify-content-space-between is-flex-direction-column p-2 is-flex-wrap-nowrap">
+              <div>
+                <h3 class="has-text-black has-text-weight-bold" style="font-size: 1.125rem;">
+                  Education
+                </h3>
+                <p class="is-size-7 has-text-dark">
+                  Power student learning, faculty research, and staff operations on Dropbox Education’s secure
+                  cloud collaboration platform.
+                </p>
+              </div>
+
+              <button class="button is-size-6 p-0 is-justify-content-left"
+                style="background-color: transparent; border: 0; box-shadow: none;">
+                <a class="has-text-black has-text-weight-bold">
+                  Learn more
+                </a>
+                <img class="image is-16x16 ml-1" src="assets/arrow-black.png" alt="arrow-black">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7 -->
+  <section class="px-4 py-6 has-background-light">
+    <div class="container">
+      <h2 class="is-size-2 has-text-weight-semibold has-text-centered has-text-black mb-4">
+        Discover, learn, thrive with Dropbox
+      </h2>
+      <div class="columns is-justify-content-center is-multiline">
+        <div class="column is-flex is-justify-content-center is-3-desktop is-12-mobile is-12-tablet ">
+          <div class="is-flex is-justify-content-space-between p-1 is-flex-direction-column has-background-white"
+            style="max-width: 355px; border-radius: 20px;">
+            <img src="assets/section-7-image-1.png" alt="section-7-image">
+            <div class="p-2">
+              <p class="has-text-dark has-text-weight-bold" style="font-size: 0.75rem;">
+                Article
+              </p>
+              <h3 class="has-text-black has-text-weight-bold mt-2 mb-1" style="font-size: 1.125rem;">
+                Study: Here's how many hours we lose to distraction—and how to get our focus back
+              </h3>
+              <p class="is-size-7 has-text-dark mb-2">
+                For our study, Economist Impact included knowledge workers globally—and found that, no matter where
+                people
+                work, there's a significant cost to lost focus around the world.
+              </p>
+            </div>
+            <div class="p-2">
+              <button class="button is-size-6 p-0 is-justify-content-left"
+                style="background-color: transparent; border: 0; box-shadow: none;">
+                <a class="has-text-black has-text-weight-bold">
+                  Read article
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="column is-flex is-justify-content-center is-3-desktop is-12-mobile is-12-tablet ">
+          <div class="is-flex is-justify-content-space-between p-1 is-flex-direction-column has-background-white"
+            style="max-width: 355px; border-radius: 20px;">
+            <img src="assets/section-7-image-2.png" alt="section-7-image">
+            <div class="p-2">
+              <p class="has-text-dark has-text-weight-bold" style="font-size: 0.75rem;">
+                Article
+              </p>
+              <h3 class="has-text-black has-text-weight-bold mt-2 mb-1" style="font-size: 1.125rem;">
+                Dropbox teams up with McLaren Racing as an Official Technology Partner of McLaren Formula 1 Team
+              </h3>
+              <p class="is-size-7 has-text-dark mb-2">
+                Dropbox brings simplified sharing, collaboration, and organization to the McLaren Formula 1 Team.
+              </p>
+
+            </div>
+
+            <div class="p-2">
+              <button class="button is-size-6 p-0 is-justify-content-left"
+                style="background-color: transparent; border: 0; box-shadow: none;">
+                <a class="has-text-black has-text-weight-bold">
+                  Read article
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="column is-flex is-justify-content-center is-3-desktop is-12-mobile is-12-tablet ">
+          <div class="is-flex is-justify-content-space-between p-1 is-flex-direction-column has-background-white"
+            style="max-width: 355px; border-radius: 20px;">
+            <img src="assets/section-7-image-3.png" alt="section-7-image">
+            <div class="p-2">
+              <p class="has-text-dark has-text-weight-bold" style="font-size: 0.75rem;">
+                Article
+              </p>
+              <h3 class="has-text-black has-text-weight-bold mt-2 mb-1" style="font-size: 1.125rem;">
+                The best way to share photos with family and friends
+              </h3>
+              <p class="is-size-7 has-text-dark mb-2">
+                Don't lose precious photos. Save them and share them with loved ones—for free. Here's an easy-to-follow
+                guide to sharing and storing photos with Dropbox.
+              </p>
+
+            </div>
+            <div class="p-2">
+              <button class="button is-size-6 p-0 is-justify-content-left"
+                style="background-color: transparent; border: 0; box-shadow: none;">
+                <a class="has-text-black has-text-weight-bold">
+                  Read article
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="has-text-centered mt-4 is-size-6">
+      <a class="is-link ">
+        View more resources
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer px-2 pt-6" style="background-color: #000000;">
+    <div class="container px-2 is-flex is-justify-content-center is-flex-direction-column">
+      <div class="columns is-multiline is-flex is-justify-content-center ">
+        <div class="column is-2-desktop is-4-tablet is-6-mobile is-flex is-flex-direction-column">
+          <h3 class="mb-1 is-size-5 has-text-white has-text-weight-bold">
+            Dropbox
+          </h3>
+          <a class="my-1 has-text-white is-size-7">Desktop app</a>
+          <a class="my-1 has-text-white is-size-7">Mobile app</a>
+          <a class="my-1 has-text-white is-size-7">Integrations</a>
+          <a class="my-1 has-text-white is-size-7">Features</a>
+          <a class="my-1 has-text-white is-size-7">Solutions</a>
+          <a class="my-1 has-text-white is-size-7">Security</a>
+          <a class="my-1 has-text-white is-size-7">Early access</a>
+          <a class="my-1 has-text-white is-size-7">Templates</a>
+          <a class="my-1 has-text-white is-size-7">Free tools</a>
+        </div>
+        <div class="column is-2-desktop is-4-tablet is-6-mobile is-flex is-flex-direction-column">
+          <h3 class="mb-1 is-size-5 has-text-white has-text-weight-bold">
+            Products
+          </h3>
+          <a class="my-1 has-text-white is-size-7">Plus</a>
+          <a class="my-1 has-text-white is-size-7">Professional</a>
+          <a class="my-1 has-text-white is-size-7">Business</a>
+          <a class="my-1 has-text-white is-size-7">Enterprise</a>
+          <a class="my-1 has-text-white is-size-7">Dash</a>
+          <a class="my-1 has-text-white is-size-7">Reclaim.ai</a>
+          <a class="my-1 has-text-white is-size-7">Dropbox Sign</a>
+          <a class="my-1 has-text-white is-size-7">DocSend</a>
+          <a class="my-1 has-text-white is-size-7">Plans</a>
+          <a class="my-1 has-text-white is-size-7">Product updates</a>
+        </div>
+        <div class="column is-2-desktop is-4-tablet is-6-mobile is-flex is-flex-direction-column">
+          <h3 class="mb-1 is-size-5 has-text-white has-text-weight-bold">
+            Features
+          </h3>
+          <a class="my-1 has-text-white is-size-7">Send large files</a>
+          <a class="my-1 has-text-white is-size-7">Send long videos</a>
+          <a class="my-1 has-text-white is-size-7">Cloud photo storage</a>
+          <a class="my-1 has-text-white is-size-7">Secure file transfer</a>
+          <a class="my-1 has-text-white is-size-7">Password manager</a>
+          <a class="my-1 has-text-white is-size-7">Cloud backup</a>
+          <a class="my-1 has-text-white is-size-7">Edit PDFs</a>
+          <a class="my-1 has-text-white is-size-7">Electronic signatures</a>
+          <a class="my-1 has-text-white is-size-7">Convert to PDF</a>
+        </div>
+        <div class="column is-2-desktop is-4-tablet is-6-mobile is-flex is-flex-direction-column">
+          <h3 class="mb-1 is-size-5 has-text-white has-text-weight-bold">
+            Support
+          </h3>
+          <a class="my-1 has-text-white is-size-7">Help center</a>
+          <a class="my-1 has-text-white is-size-7">Contact us</a>
+          <a class="my-1 has-text-white is-size-7">Privacy & terms</a>
+          <a class="my-1 has-text-white is-size-7">Cookie policy</a>
+          <a class="my-1 has-text-white is-size-7">Cookies & CCPA preferences</a>
+          <a class="my-1 has-text-white is-size-7">AI principles</a>
+          <a class="my-1 has-text-white is-size-7">Sitemap</a>
+          <a class="my-1 has-text-white is-size-7">Learning resources</a>
+        </div>
+        <div class="column is-2-desktop is-4-tablet is-6-mobile is-flex is-flex-direction-column">
+          <h3 class="mb-1 is-size-5 has-text-white has-text-weight-bold">
+            Resources
+          </h3>
+          <a class="my-1 has-text-white is-size-7">Blog</a>
+          <a class="my-1 has-text-white is-size-7">Events</a>
+          <a class="my-1 has-text-white is-size-7">Customer stories</a>
+          <a class="my-1 has-text-white is-size-7">Resources library</a>
+          <a class="my-1 has-text-white is-size-7">Developers</a>
+          <a class="my-1 has-text-white is-size-7">Community forums</a>
+          <a class="my-1 has-text-white is-size-7">Referrals</a>
+          <a class="my-1 has-text-white is-size-7">Reseller partners</a>
+          <a class="my-1 has-text-white is-size-7">Integration partners</a>
+          <a class="my-1 has-text-white is-size-7">Find a partner</a>
+        </div>
+        <div class="column is-2-desktop is-4-tablet is-6-mobile is-flex is-flex-direction-column">
+          <h3 class="mb-1 is-size-5 has-text-white has-text-weight-bold">
+            Company
+          </h3>
+          <a class="my-1 has-text-white is-size-7">About us</a>
+          <a class="my-1 has-text-white is-size-7">Jobs</a>
+          <a class="my-1 has-text-white is-size-7">Investor relations</a>
+          <a class="my-1 has-text-white is-size-7">Our impact</a>
+        </div>
+      </div>
+
+      <div class="is-flex mt-4 pb-2" style="gap: 1.25rem; border-bottom: 1px solid #353332;">
+        <a>
+          <figure class="image is-24x24">
+            <img src="assets/x.svg" alt="x">
+          </figure>
+        </a>
+        <a>
+          <figure class="image is-24x24">
+            <img src="assets/facebook.svg" alt="facebook">
+          </figure>
+        </a>
+        <a>
+          <figure class="image is-24x24">
+            <img src="assets/youtube.svg" alt="youtube">
+          </figure>
+        </a>
+      </div>
+
+      <a class=" is-flex is-align-items-center mt-2 is-size-6 has-text-white">
+        <figure class="image is-16x16 mr-1">
+          <img src="assets/language.svg" alt="language">
+        </figure>
+        English (United States)
+        <figure class="image is-16x16 ml-2">
+          <img src="assets/arrow-footer.svg" alt="arrow">
+        </figure>
+      </a>
+
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
